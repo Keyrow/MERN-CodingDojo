@@ -1,4 +1,5 @@
 // Ninja Assignment, Create a Ninja Class with attributes, and methods
+// By: Song Kim
 
 class Ninja {
 
