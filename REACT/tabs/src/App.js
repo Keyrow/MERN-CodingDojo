@@ -1,37 +1,31 @@
 import React, { useState } from 'react';
+import logo from './logo.svg';
 import './App.css';
-import TabDisplay  from "./components/TabDisplay";
-import Tab from "./components/Tab";
-// import "./components/Tabs.module.css";
+import Tabs from './components/Tabs';
 
-function App(){
-  const [content, setContent] = useState({});
-  const Tabs = [
+function App() {
+  const [tabs, setTabs] = useState([
     {
-      label : "Tab 1",
-      content : "Tab 1 content shows here",
-      color: "blue"
+      title: "Tab 1",
+      content: "Tab 1 content shows here",
+      selected: true,
     },
     {
-      label : "Tab 2",
-      content : "Tab 2 content shows here",
-      color: "green"
+      title: "Tab 2",
+      content: "Tab 2 content shows here",
+      selected: false,
     },
     {
-      label : "Tab 3",
-      content : "Tab 3 content shows here",
-      color: "yellow"
+      title: "Tab 3",
+      content: "Tab 3 content shows here",
+      selected: false,
     }
-  ]
-
-
+  ])
   return (
-    <div className="App">
-      <Tab tabs= {Tabs} setContent = {setContent}/>
-      <TabDisplay data = {content}/>
+    <div>
+      <Tabs tabs={tabs} setTabs={setTabs} />
     </div>
   );
 }
-
 
 export default App;

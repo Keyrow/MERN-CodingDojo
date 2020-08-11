@@ -19,6 +19,7 @@ function App() {
           <li>Run a marathon</li>
           <li>Feed the dogs</li>
         </ul>
+        <p>Made by: Song Kim</p>
       </header>
     </div>
   );

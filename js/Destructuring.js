@@ -1,12 +1,12 @@
-// Problem 1
+// // Problem 1
 // const cars = ['Tesla', 'Mercedes', 'Honda']
 // const [randomCar] = cars
 // const [, otherRandomCar] = cars
 // //Predict the output
 // console.log(randomCar)
 // console.log(otherRandomCar)
-//1st console log = first index: [0] = Tesla, 
-// 2nd console log = 2nd index: [1] = Mercedes
+// // 1st console log = first index: [0] = Tesla, 
+// // 2nd console log = 2nd index: [1] = Mercedes
 
 // Problem 2
 // const employee = {
@@ -16,10 +16,11 @@
 // }
 // const { name: otherName } = employee;
 // //Predict the output
-// // console.log(name);
+// console.log(name);
 // console.log(otherName);
 // first console gets overwritten because name becomes otherName which is Elon
 
+// Problem 3
 // const person = {
 //     name: 'Phil Smith',
 //     age: 47,
@@ -32,6 +33,7 @@
 // console.log(hashedPassword);
 // prints 12345, 2nd Console Log will be undefined because const password is outside the object and there is no 'person' in const password
 
+// Problem 4
 // const numbers = [8, 2, 3, 5, 6, 1, 67, 12, 2];
 // const [,first] = numbers;
 // const [,,,second] = numbers;
@@ -43,6 +45,7 @@
 // first console log compares first, 2, to second, 5. which will be false.
 // 2nd console log compares 2 with 2, which is same, prints true
 
+// Problem 5
 // const lastTest = {
 //     key: 'value',
 //     secondKey: [1, 5, 1, 8, 3, 3]

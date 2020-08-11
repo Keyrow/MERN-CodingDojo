@@ -20,12 +20,13 @@ const Task = ({ item, deleteTask, index, updateStatus }) => {
                 </div>
 
                 <div className="col-sm-3">
-                    <span>Status: {item.completed.toString()}</span>
+                    {/* removed {item.completed.toString()}, realized that it really isn't needed, looks cleaner when it shows "Status: Completed" with a checkbox */}
+                    <span>Status: </span>
                     <label className="checkBox-container">
                         <input type="checkbox"
                             onChange={e => checkboxHandler()}
                             checked={item.completed} />
-                        <span className="checkmark"></span>
+                        <span className="checkmark">Completed</span>
                     </label>
                 </div>
 

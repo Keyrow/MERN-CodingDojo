@@ -7,15 +7,15 @@ import PageTwoAndThree from './components/PageTwoAndThree';
 import PageFour from './components/PageFour';
 
 function App() {
-    return (
-      <div className="App">
-        <Router>
-          <PageOne path="/home" />
-          <PageTwoAndThree path="/:id" />
-          <PageFour path="/pagefour" />
-        </Router>
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <PageOne path="/" />
+      <Router>
+        <PageTwoAndThree path="/:id" />
+        <PageFour path="/pagefour" />
+      </Router>
+    </div>
+  );
+}
 
 export default App;
